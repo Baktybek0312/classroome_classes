@@ -9,39 +9,18 @@ from pyexpat import model
 
 
 class Phones:
-    def __init__(self,  number, model, weight):
+    def __init__(self, number, model, weight):
         self.number = number
         self.model = model
         self.weight = weight
 
     def sendMessage(self, number, model, weight):
-        print("Вам отправили с номера:", number,model,weight)
-
-iphone = Phones(996755557055 ,"Iphone 11",255)
-samsung = Phones(996550905992,"Samsung S10", 155)
-xiaomi = Phones(99670455557055,"Xiaomi mi8Lite", 125)
-iphone.sendMessage(samsung.number,samsung.model,samsung.weight)
-samsung.sendMessage(xiaomi.number,xiaomi.model,xiaomi.weight)
-xiaomi.sendMessage(iphone.number,iphone.model,iphone.weight)
+        print("Вам отправили с номера:", number, model, weight)
 
 
-# class Car:
-#     #Статические поля
-#     door = 4
-#     wheelse = 4
-#     role = 1
-#     window = 6
-#     #Динамические поля
-#     def __init__(self, year, mark):
-#         self.year = year
-#         self.mark = mark
-#     #Вывод полей
-#     def info(self):
-#         print(f'year: {self.year}')
-#         print(f'mark: {self.mark}')
-#
-#     def __priceCar(self, price):
-#         self.__price = price
-#
-# car = Car(2006, "BMW")
-# car.info()
+iphone = Phones(996755557055, "Iphone 11", 255)
+samsung = Phones(996550905992, "Samsung S10", 155)
+xiaomi = Phones(99670455557055, "Xiaomi mi8Lite", 125)
+iphone.sendMessage(samsung.number, samsung.model, samsung.weight)
+samsung.sendMessage(xiaomi.number, xiaomi.model, xiaomi.weight)
+xiaomi.sendMessage(iphone.number, iphone.model, iphone.weight)
